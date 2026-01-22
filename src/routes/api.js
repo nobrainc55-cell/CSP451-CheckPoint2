@@ -21,7 +21,7 @@ router.get("/users", (req, res) => {
   ]);
 });
 
-// POST /api/users - simulates user creation
+// POST /api/users - simulates user creation.
 router.post("/users", (req, res) => {
   const newUser = req.body;
   res.status(201). json({
