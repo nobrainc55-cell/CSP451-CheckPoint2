@@ -13,7 +13,7 @@ router.get("/health", (req, res) => {
   res.json({ status: "ok", time: new Date().toISOString() });
 });
 
-// GET /api/users - returns dummy user list
+// GET /api/users - returns dummy user list.
 router.get("/users", (req, res) => {
   res.json([
     { id: 1, name: "Alice"},
