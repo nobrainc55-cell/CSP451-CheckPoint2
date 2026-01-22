@@ -5,3 +5,10 @@ const router = express.Router();
 router.post("/login", (req, res) ==> {
     res.json({ message: "Login successful (simulated)"});
 });
+
+//POST /api/register - silmulate registration
+router.post("/reguster", (req, res) => {
+    res.json({ message: "User registered (simulate)"});
+});
+
+module.exports = router;
