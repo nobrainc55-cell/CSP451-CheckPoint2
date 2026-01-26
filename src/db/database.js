@@ -13,6 +13,9 @@ class DatabaseClient {
     }
 }
 
+// Before 
+//Esport a singleton instance
+
 // Connect to the "database"
 async connect() {
     if (this.connected) return;
