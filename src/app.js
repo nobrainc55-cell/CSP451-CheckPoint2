@@ -17,6 +17,9 @@ app.use(express.static(path.join(__dirname, "..", "public")));
 app.use("/", viewRouter);
 app.use("/api", apiRouter);
 
+const authRoutes = require("./routes/auth");
+app.use("/api", authRoutes);
+
 // 404 handler
 app.use((req, res) => {
   res.status(404).json({ error: "Not Found" });
